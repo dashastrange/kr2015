@@ -21,10 +21,10 @@ public class MyButtonUI extends BasicButtonUI {
         AbstractButton button = (AbstractButton) c;
         ButtonModel buttonModel = button.getModel();
 
-        g2d.setPaint(new GradientPaint(0, 0, Color.WHITE, 0, c.getHeight(),
+        g2d.setPaint(new GradientPaint(0, 0, Color.gray, 0, c.getHeight(),
                 new Color(149, 188, 214)));
         g2d.fillRoundRect(0, 0, c.getWidth(), c.getHeight(), 8, 8);
-        g2d.setPaint(Color.LIGHT_GRAY);
+        g2d.setPaint(Color.black);
         g2d.drawRoundRect(0, 0, c.getWidth() - 1, c.getHeight() - 1, 6, 6);
         if (buttonModel.isPressed()) {
             g2d.translate(1, 1);
